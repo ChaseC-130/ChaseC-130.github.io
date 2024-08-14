@@ -6,71 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
   </head>
+  {% unless page.path == "README.md" %}
+  <header>
+    <nav>
+<h1>
+        {% if page.url == "/sre-concepts/home.html" %}
+        <a href="/sre-concepts/home.html">Table of Contents</a>
+      {% else %}
+        <a href="/sre-concepts/home.html">SRE Concepts</a>
+      {% endif %}
+    </h1>
+        <ul id="toc">
+          <!-- Table of Contents will be populated here by JavaScript -->
+        </ul>
+      </nav>
+  </header>
+  {% endunless %}
+  {% if page.path == "README.md" %}
+  <header>
+    <h1>Chase Cargill</h1>
+    <h4><a href="https://github.com/ChaseC-130/ChaseC-130.github.io" target="_blank">GitHub</a></h4>
+        <h4><a href="https://www.linkedin.com/in/chase-cargill-31288b178/" target="_blank">LinkedIn</a></h4>
+
+  </header>
+  {% endif %}
+
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <div class="content-wrapper">
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-
-        <nav>
-            <ul id="toc">
-              <!-- Table of Contents will be populated here by JavaScript -->
-            </ul>
-          </nav>
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="{{ "/assets/js/auto_linker.js" | relative_url }}"></script>
+          <div class="main-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+      
+    <script src="{{ site.baseurl }}/assets/js/scale.fix.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/auto_linker.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
           var toc = document.getElementById("toc");
           if (toc) {
-            var headings = document.querySelectorAll("h3");
+            var headings = document.querySelectorAll("h1");
             headings.forEach(function(heading) {
-              var anchor = document.createElement("a");
-              anchor.setAttribute("href", "#" + heading.id);
-              anchor.textContent = heading.textContent;
-              var listItem = document.createElement("li");
-              listItem.appendChild(anchor);
-              toc.appendChild(listItem);
+                if (heading.innerText !== "Table of Contents" && heading.innerText !== "SRE Concepts" && heading.innerText !== "SRE Principles") {
+                    var anchor = document.createElement("a");
+                    anchor.setAttribute("href", "#" + heading.id);
+                    anchor.textContent = heading.textContent;
+                    var listItem = document.createElement("li");
+                    listItem.appendChild(anchor);
+                    toc.appendChild(listItem);
+                }
+
             });
           }
         });

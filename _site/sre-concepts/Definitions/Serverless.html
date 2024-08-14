@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Serverless design | Chase Cargill</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Serverless design" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Chase Cargill’s Knowledge Base" />
+<meta property="og:description" content="Chase Cargill’s Knowledge Base" />
+<link rel="canonical" href="http://localhost:4000/sre-concepts/Definitions/Serverless.html" />
+<meta property="og:url" content="http://localhost:4000/sre-concepts/Definitions/Serverless.html" />
+<meta property="og:site_name" content="Chase Cargill" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Serverless design" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Chase Cargill’s Knowledge Base","headline":"Serverless design","url":"http://localhost:4000/sre-concepts/Definitions/Serverless.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="/assets/css/style.css?v=8fcc433ac4adfbf5b919adadc3a1eb18aa24b321">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  
+  <header>
+    <nav>
+<h1>
+        
+        <a href="/sre-concepts/home.html">SRE Concepts</a>
+      
+    </h1>
+        <ul id="toc">
+          <!-- Table of Contents will be populated here by JavaScript -->
+        </ul>
+      </nav>
+  </header>
+  
+  
+
+  <body>
+    <div class="wrapper">
+        <div class="content-wrapper">
+
+          <div class="main-content">
+            <h3 id="serverless-design">Serverless design</h3>
+<p>Benefits</p>
+<ul>
+  <li>Automatic scaling in response to incoming traffic. Allows to meet demand without downtime, latency, or manually intervention</li>
+  <li>Less overhead as developers can focus on writing code rather than managing servers.</li>
+  <li>Cost efficient, as only the capacity needed is used
+Drawbacks</li>
+  <li>Latency during “cold starts” which occur when they platform must intialize code that hasn’t been invoked recently.</li>
+  <li>Cold starts can be optimize with periodic invocations to keep functions warm</li>
+  <li>Limited control over the hardware, network configurations, or runtimes.</li>
+  <li>Vendor lock-in making it hard to migrate to another provider</li>
+  <li>Can be designed to be vendor agnostic</li>
+  <li>Complex debugging and monitoring as the system is distributed and you may lack direct access to underlying infrastructure</li>
+  <li>Some limitations on execution time, memory usage, payload size, etc.</li>
+  <li>Stateless by design, which means that states must be managed externally such as databases, cache, or object storage. Increased complexity.</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+    <script src="/assets/js/scale.fix.js"></script>
+    <script src="/assets/js/auto_linker.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var toc = document.getElementById("toc");
+          if (toc) {
+            var headings = document.querySelectorAll("h1");
+            headings.forEach(function(heading) {
+                if (heading.innerText !== "Table of Contents" && heading.innerText !== "SRE Concepts" && heading.innerText !== "SRE Principles") {
+                    var anchor = document.createElement("a");
+                    anchor.setAttribute("href", "#" + heading.id);
+                    anchor.textContent = heading.textContent;
+                    var listItem = document.createElement("li");
+                    listItem.appendChild(anchor);
+                    toc.appendChild(listItem);
+                }
+
+            });
+          }
+        });
+        </script>
+        
+  </body>
+</html>

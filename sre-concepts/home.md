@@ -44,12 +44,10 @@ Latency: The time it takes to service a request.
 Traffic: The demand on your system, often measured in requests per second or transactions per second.
 Errors: The rate of requests that fail, either by returning an error or failing to complete.
 Saturation: How "full" your service is, often measured by metrics like CPU or memory usage.
-Operational Excellence: Be ready to discuss how you’ve implemented operational excellence in previous roles, particularly in setting up SLOs, managing error budgets, and designing for resilience.
 
 ## Cloud Platforms
-AWS, Azure, Google Cloud: Since the job posting emphasizes strong knowledge of cloud platforms, ensure you are comfortable discussing the core services (Compute, Storage, Networking, Databases) of each platform, and how you've utilized them in your previous roles.
-Serverless Architecture: You’ve used serverless architecture in your Enshape app. Be ready to explain the benefits and challenges of serverless design and how it impacts reliability and scalability.
-
+AWS, Azure, Google Cloud: Core services (Compute, Storage, Networking, Databases) 
+Serverless Architecture 
 
 
 
@@ -94,27 +92,28 @@ Kuve-proxy configures node's networking stack using ipstables or IPVS in more re
 
 
 ## Monitoring and Observability
-Datadog, NewRelic, Splunk: Familiarize yourself with how these tools are used to monitor, log, and trace applications. Be prepared to discuss how you've used these tools to detect and resolve incidents, and how you’ve set up monitoring dashboards in your past roles (e.g., Grafana/PromQL dashboards).
-Prometheus: Since you’ve worked with PromQL, be ready to discuss Prometheus and its use in metrics collection, querying, and alerting.
+Datadog, NewRelic, Splunk: Used to monitor, log, and trace applications.
+Prometheus
 
 ## Microservices and Distributed Systems
-Architecture: Be prepared to explain how microservices architecture impacts system reliability, and discuss strategies for managing distributed systems, such as circuit breakers, retries, and distributed tracing.
+Architecture: Be prepared to explain how microservices architecture impacts system reliability, and discuss strategies for managing distributed systems, such as [circuit breakers](#circuit-breakers-and-retries)
+, retries, and distributed tracing.
 Communication: Understand the different methods of communication between microservices (e.g., REST, gRPC, message queues) and how to ensure resilience in these communications.
 
 ## Networking and Security
 Networking Basics: Review key networking concepts, including TCP/IP, DNS, load balancing, and how they relate to reliability in distributed systems.
-Security Best Practices: Familiarize yourself with security practices in cloud environments, such as IAM roles, network policies, encryption, and how you’ve implemented security measures in your previous roles.
+Security Best Practices: IAM roles, network policies, encryption
 
 ## Incident Management
-Incident Command: You’ve served as an incident commander, so be prepared to discuss how you’ve handled major incidents, coordinated with teams, communicated with stakeholders, and conducted post-incident reviews.
-Documentation and Communication: Highlight your experience in documenting incidents, creating post-mortems, and ensuring clear communication during and after incidents.
+Incident Command
+Documentation and Communication: Creating post-mortems, and ensuring clear communication during and after incidents.
 
 ## Collaboration and Leadership
-Mentorship and Team Collaboration: Since the role involves mentoring and cross-functional collaboration, think of examples where you’ve led technical discussions, mentored junior engineers, or contributed to design decisions that had a broad impact.
+Mentorship and Team Collaboration: Mentoring and cross-functional collaboration, technical discussions, mentored junior engineers, or contributed to design decisions that had a broad impact.
 
 ## Technical Design and Systems Thinking
-End-to-End Design: Be ready to discuss projects where you drove the technical design from start to finish, especially focusing on how you ensured the system's reliability, scalability, and maintainability.
-Holistic Problem Solving: Reflect on instances where you took a whole-system approach to solve complex issues, ensuring that all components (structure, people, process, technology) were aligned.
+End-to-End Design: Technical design from start to finish, especially focusing on system's reliability, scalability, and maintainability.
+Holistic Problem Solving: Solve complex issues, ensuring that all components (structure, people, process, technology) were aligned.
 
 
 

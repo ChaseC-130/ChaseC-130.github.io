@@ -1,9 +1,39 @@
+# Site settings
+title: "Chase Cargill"
+description: "Chase Cargill's Knowledge Base"
 theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Optional: Configure kramdown
+kramdown:
+  input: GFM # Use GitHub-Flavored Markdown
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# Optional: Plugins
 plugins:
- - jekyll-remote-theme
- - jekyll-toc
+  - jekyll-toc  # For automatic table of contents
+  - jekyll-feed  # RSS feed generator
+  - jekyll-sitemap  # Sitemap generator
+
+
+# Table of Contents settings (if using jekyll-toc)
 toc:
   min_level: 1
   max_level: 2
-title: "Chase Cargill"
-description: "Chase Cargill's Knowledge Base"
+
+# GitHub Pages settings
+repository: your-github-username/your-repo-name
+url: "https://your-custom-domain.com"  # If you're using a custom domain
+
+github_username: ChaseC-130
+linkedin_username: chase-cargill-31288b178

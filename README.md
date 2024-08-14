@@ -1,6 +1,6 @@
 
 ## Knowledge base
-[Site Reliability Engineering Concepts](sre-concepts.md)
+[Site Reliability Engineering Concepts](/sre-concepts/home.md)
 
 ## Enshape
 [Apple App Store (iOS)](https://apps.apple.com/us/app/enshape/id6474455430)  

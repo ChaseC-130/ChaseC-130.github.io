@@ -1,5 +1,9 @@
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 plugins:
-- jekyll-remote-theme
+ - jekyll-remote-theme
+ - jekyll-toc
+toc:
+  min_level: 1
+  max_level: 2
 title: "Chase Cargill"
 description: "Chase Cargill's Knowledge Base"

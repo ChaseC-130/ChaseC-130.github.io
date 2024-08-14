@@ -21,13 +21,12 @@ kramdown:
 
 # Optional: Plugins
 plugins:
-  - jekyll-toc  # For automatic table of contents
   - jekyll-feed  # RSS feed generator
   - jekyll-sitemap  # Sitemap generator
   - auto_linker  
 
 
-# Table of Contents settings (if using jekyll-toc)
+# Table of Contents settings
 toc:
   min_level: 1
   max_level: 2

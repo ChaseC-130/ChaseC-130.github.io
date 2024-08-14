@@ -38,17 +38,17 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+
+        <nav>
+            <ul id="toc">
+              <!-- Table of Contents will be populated here by JavaScript -->
+            </ul>
+          </nav>
       </header>
       <section>
 
       {{ content }}
-      <nav>
-        <h2>Table of Contents</h2>
-        <ul id="toc">
-            {% toc html="true" list_type="ul" %}
-        </ul>
-      </nav>
-      
+
       </section>
       <footer>
         {% if site.github.is_project_page %}
@@ -58,5 +58,22 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var toc = document.getElementById("toc");
+          if (toc) {
+            var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+            headings.forEach(function(heading) {
+              var anchor = document.createElement("a");
+              anchor.setAttribute("href", "#" + heading.id);
+              anchor.textContent = heading.textContent;
+              var listItem = document.createElement("li");
+              listItem.appendChild(anchor);
+              toc.appendChild(listItem);
+            });
+          }
+        });
+        </script>
+        
   </body>
 </html>

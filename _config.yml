@@ -24,6 +24,7 @@ plugins:
   - jekyll-toc  # For automatic table of contents
   - jekyll-feed  # RSS feed generator
   - jekyll-sitemap  # Sitemap generator
+  - auto_linker  
 
 
 # Table of Contents settings (if using jekyll-toc)

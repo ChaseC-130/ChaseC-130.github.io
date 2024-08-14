@@ -1,6 +1,5 @@
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
 title: "Chase Cargill"
 description: "Chase Cargill's Knowledge Base"
-css:
-  - "assets/css/style.css"
-  - "assets/css/dark-mode.css"

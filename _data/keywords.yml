@@ -1,6 +1,0 @@
-circuit breakers: /sre-concepts/Definitions/CircuitBreaker.md
-circuit breaker: /sre-concepts/Definitions/CircuitBreaker.md
-distributed tracing: /sre-concepts/Definitions/DistributedTracing.md
-trace: /sre-concepts/Definitions/DistributedTracing.md
-prometheus: /sre-concepts/Definitions/Prometheus.md
-datadog: /sre-concepts/Definitions/Datadog.md

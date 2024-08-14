@@ -19,11 +19,9 @@ kramdown:
     block:
       line_numbers: true
 
-# Optional: Plugins
 plugins:
-  - jekyll-feed  # RSS feed generator
-  - jekyll-sitemap  # Sitemap generator
-  - auto_linker  
+  - jekyll-feed
+  - jekyll-sitemap
 
 
 # Table of Contents settings

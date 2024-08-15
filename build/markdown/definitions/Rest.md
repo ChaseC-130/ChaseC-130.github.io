@@ -1,6 +1,6 @@
 # REST (Representationl State Transfer)
 
-# Definitions
+## Definitions
 REST is an architectural style for designing networked applications. It relies on a stateless, client-server, cacheable communications protocol, typical HTTP.
 RESTful systems use HTTP methods explicity and are built around resources that are identified by URLs. REST
 

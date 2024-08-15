@@ -1,6 +1,5 @@
 # SRE Principles
 Understand the core principles of SRE
-Update Test
 
 # Four Golden Pillars
  - Service level objectives (SLOs) — Quantitative and objective metrics that define successful service levels.

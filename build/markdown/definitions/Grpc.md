@@ -1,6 +1,6 @@
 # gRPC (gRPC Remote Procedure Call)
 
-# Definitions
+## Definitions
 gRPC is an open-source, high performance RPC (Remote Procedure Call) framework developed by Google. In enables communication between clients and servers in a strongly-typed, efficient, and language-agnostic manner. gRPC leverages HTTP/2 for transport, Protocol Buffers (Protobuf) as the interface definition language (IDL), and provides features such as bi-directional streaming, flow contrl, multiplexing requests, and more. 
 
 # Key Concepts

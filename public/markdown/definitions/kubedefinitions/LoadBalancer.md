@@ -1,0 +1,1 @@
+Integrates with cloud providers to automatically create a load balancer that routes traffic to the service

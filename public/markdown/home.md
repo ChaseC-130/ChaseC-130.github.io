@@ -1,5 +1,6 @@
 # SRE Principles
 Understand the core principles of SRE
+Update Test
 
 # Four Golden Pillars
  - Service level objectives (SLOs) — Quantitative and objective metrics that define successful service levels.
@@ -30,7 +31,7 @@ Understand the core principles of SRE
 # Microservices and Distributed Systems
  - Reliability, Resilience, and Highly Available concepts
     - [Circuit breakers](./definitions/CircuitBreaker)
-    - [REST](./definitions/REST)
+    - [REST](./definitions/Rest)
     - [gRPC](./definitions/Grpc)
     - [Message Queues](./definitions/MessageQueues)
 

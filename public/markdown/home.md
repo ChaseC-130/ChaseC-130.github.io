@@ -21,7 +21,7 @@ Understand the core principles of SRE
 # Architecture
  - Containerization and Orchestration
    - Docker
-   - [Kubernetes](./definitions/Kubernetes)
+   - [Kubernetes](./definitions/Kube)
  - [Serverless](./definitions/Serverless)
  - Cloud Platforms 
     - Compute, Storage, Networking, Databases

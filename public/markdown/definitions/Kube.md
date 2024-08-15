@@ -13,7 +13,7 @@ Service types can be:
 - Internal
  - ClusterIP (Internal cluster IP, only accessible from within the cluster)
 - External 
- - NodePort - Exposes the service on a specifc port on each node's IP address, allowing external traffic
+ - [NodePort](./kubedefinitions/NodePort) Exposes the service on a specifc port on each node's IP address, allowing external traffic
  - LoadBalancer - Integrates with cloud providers to automatically create a load balancer that routes traffic to the service
  - ExternalName - Maps the service to an external DNS name, allowing to act as a proxy for external services.
 

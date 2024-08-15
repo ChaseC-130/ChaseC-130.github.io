@@ -1,6 +1,6 @@
 # Message Queues
 
-# Definitions
+## Definitions
 A Message Queue is a software component that allows messages (data, instructions or events) to be exchanged between different systems or components in an asynchronous manner. It works on the principle of a producer-consumer model where producers send message to the queue, and consumers retrive and process tham at their own pace.
 
 # How Message Ques Work

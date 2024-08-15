@@ -1,4 +1,4 @@
-## Four Golden Signals
+# Four Golden Signals
 
 # Latency
  - The time it takes to service a request.

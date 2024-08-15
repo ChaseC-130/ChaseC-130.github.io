@@ -1,32 +1,34 @@
 # SRE Principles
-Objective: Understand the core principles of SRE
+Understand the core principles of SRE
 
 
 # Monitoring and Observability
- - Four Golden Signals
- - Service Level
+ - [Four Golden Signals](./definitions/FourGoldenSignals)
+ - [Service Level](./definitions/ServiceLevel)
  - Health checks and automation
+ - [Distributed Tracing](./definitions/DistributedTracing)
  - Common tools
     - Grafana, Prometheus, Datadog, Splunk, NewRelic
 
 
 # Architecture
  - Containerization and Orchestration
- - Serverless
+   - Docker
+   - [Kubernetes](./definitions/Kubernetes)
+ - [Serverless](./definitions/Serverless)
  - Cloud Platforms 
     - Compute, Storage, Networking, Databases
 
 
-
 # Microservices and Distributed Systems
  - Reliability, Resilience, and Highly Available concepts
-    - Circuit breakers
-    - REST
-    - gRPC
-    - Message Queues
+    - [Circuit breakers](./definitions/CircuitBreaker)
+    - [REST](./definitions/REST)
+    - [gRPC](./definitions/Grpc)
+    - [Message Queues](./definitions/MessageQueues)
 
 # Networking and Security
-  - TCP/IP
+  - [TCP/IP](./definitions/TcpIp)
   - DNS
   - Load Balancing
   - OSI Model

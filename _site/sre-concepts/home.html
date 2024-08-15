@@ -22,8 +22,7 @@
 {"@context":"https://schema.org","@type":"WebPage","description":"Chase Cargill’s Knowledge Base","headline":"SRE Principles","url":"http://localhost:4000/sre-concepts/home.html"}</script>
 <!-- End Jekyll SEO tag -->
 
-
-<link rel="stylesheet" href="/assets/css/style.css?v=8fcc433ac4adfbf5b919adadc3a1eb18aa24b321">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8fcc433ac4adfbf5b919adadc3a1eb18aa24b321">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -39,28 +38,26 @@
 <!-- end custom head snippets -->
 
   </head>
-  
-  <header>
-    <nav>
-<h1>
-        
-        <a href="/sre-concepts/home.html">Table of Contents</a>
-      
-    </h1>
-        <ul id="toc">
-          <!-- Table of Contents will be populated here by JavaScript -->
-        </ul>
-      </nav>
-  </header>
-  
-  
-
   <body>
     <div class="wrapper">
-        <div class="content-wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">Chase Cargill</a></h1>
 
-          <div class="main-content">
-            <h1 id="sre-principles">SRE Principles</h1>
+        
+
+        <p>Chase Cargill's Knowledge Base</p>
+
+        
+        <p class="view"><a href="https://github.com/your-github-username/your-repo-name">View the Project on GitHub <small>your-github-username/your-repo-name</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="sre-principles">SRE Principles</h1>
 <p>Objective: Understand the core principles of SRE</p>
 
 <h1 id="monitoring-and-observability">Monitoring and Observability</h1>
@@ -155,31 +152,15 @@
 
 <p>Kubernetes liveness, readiness, and startup probes help monitor healt hand automate recovery actions like restarting failed pods.</p>
 
-          </div>
-        </div>
-      </div>
-      
-    <script src="/assets/js/scale.fix.js"></script>
-    <script src="/assets/js/auto_linker.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          var toc = document.getElementById("toc");
-          if (toc) {
-            var headings = document.querySelectorAll("h1");
-            headings.forEach(function(heading) {
-                if (heading.innerText !== "Table of Contents" && heading.innerText !== "SRE Concepts" && heading.innerText !== "SRE Principles") {
-                    var anchor = document.createElement("a");
-                    anchor.setAttribute("href", "#" + heading.id);
-                    anchor.textContent = heading.textContent;
-                    var listItem = document.createElement("li");
-                    listItem.appendChild(anchor);
-                    toc.appendChild(listItem);
-                }
 
-            });
-          }
-        });
-        </script>
+      </section>
+      <footer>
         
+        <p>This project is maintained by <a href="https://github.com/your-github-username">your-github-username</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
   </body>
 </html>

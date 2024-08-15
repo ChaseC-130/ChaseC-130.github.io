@@ -1,7 +1,7 @@
 
-# Service Level Indicator (SLI), Service Level Objective (SLO), Service Level Agreement (SLA)
+## Service Level Indicator (SLI), Service Level Objective (SLO), Service Level Agreement (SLA)
 ## Definitions
-## Service Level Indicator (SLI)
+# Service Level Indicator (SLI)
 A specific metric that quantifies the performance or reliability of a service. It's a measurable attribute of the service that reflects how well it is performing from the user's perspective. 
 Common SLIs:
  - Latency 
@@ -10,7 +10,7 @@ Common SLIs:
  - Availability (The proprotion of time the service is up and running this is usually the ratio of time the service is operational and able to serve requests)
  - Saturation (A measure of how full the system is, such as CPU or memory utilization)
 
-## Service Level Objective (SLO)
+# Service Level Objective (SLO)
 A target or goal for the perofmrance of a serivce, as measured by an SLI. It's essentially a promise you make internally about how reliable or performant a service should be.
  - To set SLOs, you should choose relevant SLIs that matter to your users and reflect their experience with your service.
  - Set specific measurable targets for each SLI. For example, you might set an SLO that 99.9% of requests should be served within 500ms.
@@ -26,7 +26,7 @@ The rate at which your service is consuming your error budget. Short-term burn r
 `(short_term_burn_rate = rate(http_requests_total{status!~"2.."}[5m])) / 0.001`
 `(long_term_burn_rate = rate(http_requests_total{status!~"2.."}[1h])) / 0.001`
 
-## Service Level Agreements (SLAs)
+# Service Level Agreements (SLAs)
 An SLA is a formal contract between a service provider and a customer that defines the level of service expected. SLAs are typically legally binding and may include penalities if the service does not meet the agreed-upon SLOs.
  - SLOs are included in the SLA, but with legal backing. They define the expected level of service, such as 99.9% uptime.
  - SLAs can include penalties for not meeting SLOs, such as financial compensation or service credits.

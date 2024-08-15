@@ -4,11 +4,13 @@
     - Represents a single unit of work within a trace. Could be a function call, database query, external API Call, or any other operation that occurs when processing a request
     - Each span typically records information such as the start time, duration, and any errors or logs associated with that operation
  - Trace
-    - A trace is a collection of spans that togethe represent the entire journey of a request through the system. Provides a complete picture of how the request moved from service to service, including the timing information for each span
+    - A trace is a collection of spans that together represent the entire journey of a request through the system. Provides a complete picture of how the request moved from service to service, including the timing information for each span
 
 ## Uses
  - If a user reports an operation is slow, tracing can help identify which part of the system is causing the delay
+
  - Sometimes, logs or metrics alone do not provide enough context to troubleshoot an issue. By correlating traces with logs and metrics, you can get a more comprehensive view of what's happening in the system. For example, if a trace shows a slow databsae query, you can look at the corresponding logs to see if there was any database errors, or check metrics to see if there was a spike in load at that time.
+
  - Monitoring and alerting can be setup on traces based on trace data. For example, you could trigger an alert if the duration of a particular span exceeds a threshold or if the erro rate for a certain service increases.
 
  #### Correlating Traces

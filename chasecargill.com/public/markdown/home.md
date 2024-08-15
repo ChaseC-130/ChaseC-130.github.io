@@ -1,7 +1,14 @@
 # SRE Principles
 Understand the core principles of SRE
 
+# Four Golden Pillars
+ - Service level objectives (SLOs) — Quantitative and objective metrics that define successful service levels.
+ - Monitoring — Collecting metrics about the service to understand how it’s performing.
+ - Emergency response — Having processes in place to respond to incidents when they occur to minimize customer impact.
+ - Change management — Processes for planning, testing and deploying code or configuration changes to ensure high quality and minimize risk.
 
+
+ 
 # Monitoring and Observability
  - [Four Golden Signals](./definitions/FourGoldenSignals)
  - [Service Level](./definitions/ServiceLevel)

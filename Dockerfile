@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # This ensures latest markdown files are present
-COPY /public/markdown /app/public/markdown
+COPY /public/markdown /app/build/markdown
 
 # Copy the build output to the NGINX html directory
 COPY --from=build /app/build /usr/share/nginx/html

@@ -1,6 +1,6 @@
 # TCP/IP (Transmission Control Protocol/Internet Protocol)
 
-# Definitions
+## Definitions
 TCP/IP is the fundamental suite of communication protocols used to interconnect network devices on the internet and other private networks. TCP/IP defines how data should be packetized, addressed, transmitted, routed, and received by devices in a network. It is the foundation for most networking functions and applications on the internet today.
 
 # The TCP/IP Model

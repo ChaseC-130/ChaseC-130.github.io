@@ -19,11 +19,11 @@ RUN npm run build
 # Use an official NGINX image to serve the app
 FROM nginx:alpine
 
-# This ensures latest markdown files are present
-COPY /public/markdown /app/build/markdown
-
 # Copy the build output to the NGINX html directory
 COPY --from=build /app/build /usr/share/nginx/html
+
+# Ensure the markdown files are copied to the correct location inside the container
+COPY public/markdown /usr/share/nginx/html/markdown
 
 # Copy custom NGINX configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf

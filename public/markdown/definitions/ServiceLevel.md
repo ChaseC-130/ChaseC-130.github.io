@@ -11,14 +11,14 @@ Common SLIs:
  - Saturation (A measure of how full the system is, such as CPU or memory utilization)
 
 # Service Level Objective (SLO)
-A target or goal for the perofmrance of a serivce, as measured by an SLI. It's essentially a promise you make internally about how reliable or performant a service should be.
+A target or goal for the performance of a serivce, as measured by an SLI. It's essentially a promise you make internally about how reliable or performant a service should be.
  - To set SLOs, you should choose relevant SLIs that matter to your users and reflect their experience with your service.
  - Set specific measurable targets for each SLI. For example, you might set an SLO that 99.9% of requests should be served within 500ms.
 
 ### Error budgets
 The difference between 100% availability and your SLO is your error budget. For example, if your SLO is 99.9% availability, your error budget is 0.1% downtime. This budget can be "spent" on planned maintenance, experiments, or other operational issues.
 
-Note: Some companies Prometheus AlertManager integrated with Pagerduty to notify when SLO budgets are exceeded. An alerting rule can be created in Prometheus to trigger when an SLO is breached.
+Note: Some companies use Prometheus AlertManager integrated with Pagerduty to notify when SLO budgets are exceeded. An alerting rule can be created in Prometheus to trigger when an SLO is breached.
 
 ### Burn Rate
 The rate at which your service is consuming your error budget. Short-term burn rate detects rapid spikes that could quickly deplete the error budget. Long-term burn rates detect slower, sustained issues that could deplete the error budget over time.

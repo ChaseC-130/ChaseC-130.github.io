@@ -1,6 +1,6 @@
 # Java
 
-## Just-In-Time (JIT) Compiler
+# Just-In-Time (JIT) Compiler
  - Crucial component of modern runtime environments like Java Virtual Machine (JVM)
  - Translates intermediate code (bytecode) into native machine code at runtime, just before it is executed.
     - When Java is compiled, it is not directly compiled to machine code, it is compiled to intermediate form called bytecode which is platform-independent and executed by the JVM
@@ -13,8 +13,7 @@
  - JIT can introduce a delay (often referred to as "warm-up time") as the JVM compiles and optimizes the code
  - Requires additional memory for storing both the compiled machine code and the metadata needed for optimizations
 
-
-## Heap
+# Heap
  - Memory allocated in a Java Virtual Machine (JVM) 
  - Region of memory where objects are dynamically allocated during execution
  - Heap Size 
@@ -41,7 +40,7 @@
         - Native memory - The jVM and other native libraries require memory outside the heap
     - Best practice for heap size is typically around 25-50% of the total available memory to leave room for JVM, operating system, and other processes
 
-## Garbage Collection
+# Garbage Collection
  - As objects are no longer needed, garbage collector reclaims memory making it available for new objects
  - The frequency and duration of garbage collection events can be influenced by the size of the heap
   - Larger heap reduces the frequency of garbage collection, but increases the duration of each garbage collection event
@@ -72,7 +71,7 @@
         - `-XX:UseEpsilonGC`
         - No-op garbage collector that does not perform any memory reclamation. Used mainly for testing, benchmarking, and scenarios where memory management is not a concern
         
-## Threads
+# Threads
  - Smallest unit of executing within a process
  - Separate path of execeution in the program, allowing multiple tasks to run concurrently
  - Java supports multithreading, meaning multiple threads can be executed in parallel, allowing an application to perform multiple operations at the same time. Particularly useful for tasks that can performed independently, such as handling client requests in a server application
@@ -94,7 +93,7 @@
  - Threads have priority between 1-10 `MIN_PRIORITY` (1) and `MAX_PRIORITY` (10) with `NORM_PRIORITY` (5) as the default
     - JVM thread scheduler determine which threads to run at any given time, thread priority is simply a suggestion to the scheduler and does not guarantee higher-priority thread will always run before lower-priority threads
 
-## Thread Exhaustion
+# Thread Exhaustion
  - Running out of threads usually happens when the application creates more threads than the system can handle either due to misconfiguration, a bug, or an exceptionally high load
  - When an application exhausts its thread pool, new tasks cannot be executed, which may include important operations like handling incoming requests or running scheduled tasks
  - Garbage collection requires threads to operate, if all threads are consumed by the application, the JVM may not have sufficient resources to run GC effectively. In extreme cases, the JVM might fail to allocate threads for GC

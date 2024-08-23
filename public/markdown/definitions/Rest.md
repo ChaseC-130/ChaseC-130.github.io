@@ -6,7 +6,6 @@ RESTful systems use HTTP methods explicity and are built around resources that a
 
 # Resources
  - Resource: An object or representation of something that can be accessed via a URL. In REST, resources are typically represented by JSON or XML. RESTful
-
  - URI (Uniform Resource Identifier): The unique address of a resource within a RESTful service. 
 
 # HTTP Methods

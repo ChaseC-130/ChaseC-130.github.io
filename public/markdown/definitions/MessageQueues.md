@@ -18,7 +18,7 @@ A Message Queue is a software component that allows messages (data, instructions
 # Types of Message Queues
  - Point-to-Point (Queues)
     - In this model, a message is sent to a queue, and only one consumer processes that message. Once the message is processed, it is removed from the queue. This model ensures that each message is processed exactly once.
- - Publish/Subscribe (Topicss)
+ - Publish/Subscribe (Topics)
     - In this model, a message is published to a topic, and multiple consumers (subscribers) can receive and process the same message. The allows for broadcast messaging where a single message is delivered to multiple recipients
 
 # Benefits of using Message Queues

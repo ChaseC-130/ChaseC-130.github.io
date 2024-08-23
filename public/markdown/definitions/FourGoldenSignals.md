@@ -24,7 +24,6 @@ The time it takes to service a request. It is a critical indicator of user exper
  - Request Processing Time
     - The time spent in your application processing a request
 
-
 # Traffic
 The demand on your system. It is typically quantified in terms of requests per second (RPS), transactions per second (TPS), or data transferred per second.
 
@@ -39,7 +38,6 @@ The demand on your system. It is typically quantified in terms of requests per s
     - Understanding traffic patterns is essential for scaling resources to meet demand without over-provisioning
 - Incident Detection
     - Sudden changes in traffic can signal issues such as a DDoS attack, deployment problems, or upstream service failures
-
 
 ### Example Metrics
  - Requests Per Second (RPS)

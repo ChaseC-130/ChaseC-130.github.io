@@ -1,0 +1,18 @@
+.App {
+    text-align: center;
+  }
+  
+  .markdown-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .markdown-container h1, .markdown-container h2, .markdown-container h3 {
+    margin-top: 1.5em;
+  }
+  
+  .markdown-container p {
+    line-height: 1.6;
+  }
+  
